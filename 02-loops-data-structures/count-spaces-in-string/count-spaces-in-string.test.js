@@ -1,7 +1,8 @@
+const w = require('jest-autograding-reporter').weight
 const countSpacesInString = require('./count-spaces-in-string')
 
-describe('countSpacesInString', () => { 
-    it('should', () => { 
+describe('countSpacesInString', () => {
+    it(w(1, 'should return the number of spaces in the string'), () => {
         expect(countSpacesInString("Hello, World!")).toBe(1);
         expect(countSpacesInString("This is a test string.")).toBe(4);
         expect(countSpacesInString("NoSpacesHere")).toBe(0);
