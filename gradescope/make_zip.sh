@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
-# copy test file
-cp ../**/**/*.test.js ./
+# copy files with tests
+cp -r ../0* ./
 # copy package.json
 cp ../package.json ../jest.config.js ./
 
-zip -r gradescope.zip setup.sh run_autograder package.json jest.config.js *.test.js
+TESTS=$(ls ./0*/*/*.test.js)
+zip -r gradescope.zip setup.sh run_autograder package.json jest.config.js $TESTS
 
-# remove test file
-rm ./*.test.js
+# remove copied files
+rm -r ./0*
 rm package.json
 rm jest.config.js
