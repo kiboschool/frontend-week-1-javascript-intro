@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "grade": "jest --bail=0 --testResultsProcessor jest-autograding-reporter"
     },
     "keywords": [],
     "author": "",
