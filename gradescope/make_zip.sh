@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # copy test file
-cp ../*.test.js ./
+cp ../**/**/*.test.js ./
 # copy package.json
 cp ../package.json ../jest.config.js ./
 
