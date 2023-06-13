@@ -9,7 +9,16 @@
  * // Output: 3
  */
 
-function countVowelsInString() {
+let VOWELS = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E','I', 'O', 'U'])
+
+function countVowelsInString(s) {
+  let count = 0;
+  for (let char of s) {
+    if (VOWELS.has(char)) {
+      count += 1;
+    }
+  }
+  return count
 }
 
 module.exports = countVowelsInString;

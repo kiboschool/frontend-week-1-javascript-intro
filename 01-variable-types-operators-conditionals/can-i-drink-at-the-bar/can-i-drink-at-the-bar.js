@@ -13,7 +13,7 @@ const countryAgeLimit = {
 */
 
 function canIDrinkAtTheBar(person) {
-    
+  return person.age >= countryAgeLimit[person.country]
 }
 
 module.exports = canIDrinkAtTheBar;

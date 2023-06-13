@@ -9,7 +9,7 @@
  * // Output: 13
  */
 function countCharactersInString(str) {
-    
+  return str.length    
 }
 
 module.exports = countCharactersInString;

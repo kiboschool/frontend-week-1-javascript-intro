@@ -9,6 +9,13 @@
  * // Output: 1
  */
 function countSpacesInString(str) {
+  let count = 0;
+  for (let char of str) {
+    if (char == " ") {
+      count += 1
+    }
+  }
+  return count
 }
 
 module.exports = countSpacesInString;

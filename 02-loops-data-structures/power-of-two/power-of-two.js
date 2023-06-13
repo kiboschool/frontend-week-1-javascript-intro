@@ -9,7 +9,8 @@
  * // Output: 8
  */
 
-function powerOfTwo() {
+function powerOfTwo(a) {
+  return 2 ** a
 }
 
 module.exports = powerOfTwo;

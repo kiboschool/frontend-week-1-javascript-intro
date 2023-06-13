@@ -21,7 +21,8 @@ const countryVoteLimit = {
 */
 
 function canIDriveAndVote(person) {
-
+  return person.age >= countryDriveLimit[person.country]
+    && person.age >= countryVoteLimit[person.country]
 }
 
 module.exports = canIDriveAndVote;

@@ -10,6 +10,7 @@
  * Output: true
  */
 function bothNumbersArePair(a, b) {
+  return a % 2 == 0 && b % 2 == 0;
 }
 
 module.exports = bothNumbersArePair;

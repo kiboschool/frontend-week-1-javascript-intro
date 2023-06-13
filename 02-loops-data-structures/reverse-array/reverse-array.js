@@ -9,7 +9,8 @@
  *  // Output: [3, 2, 1]
  */
 
-function reverseArray() {
+function reverseArray(array) {
+  return array.reverse()
 }
 
 module.exports = reverseArray;
